@@ -3,6 +3,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import utilities.PropertyUtils;
+import utilities.RandomEmailGenerator;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.AssertJUnit.assertNotNull;
@@ -13,10 +14,13 @@ public class UserSignUpTest {
         // Set the base URI for REST Assured
         RestAssured.baseURI = PropertyUtils.getProperty("base.url");
 
+        // Generate a random email using the utility function
+        String randomEmail = RandomEmailGenerator.generateRandomEmail();
+
         // Create the request body
         // Note: We may get a 401 status code if the email is already registered.
         // For this example, use a random unique email.
-        String requestBody = "{\"email\": \"abc@gmail.com\", \"password\": \"12345678\"}";
+        String requestBody = String.format("{\"email\": \"%s\", \"password\": \"12345678\"}", randomEmail);
 
         // Send a POST request and get the response
         Response response = RestAssured.given()
