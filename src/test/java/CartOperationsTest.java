@@ -8,7 +8,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class CartOperationsTest {
-    @Test
+    @Test(groups={"parallel"})
     public void cartOperationsCreationAndDeletion() {
         // Read base URL from the property file
         RestAssured.baseURI = PropertyUtils.getProperty("base.url");
