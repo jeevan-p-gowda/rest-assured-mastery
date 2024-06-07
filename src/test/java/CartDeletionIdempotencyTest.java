@@ -9,7 +9,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class CartDeletionIdempotencyTest {
-    @Test
+    @Test(groups={"parallel"})
     public void verifyCartDeletionAndIdempotency() {
         // Read base URL from the property file
         String baseUrl = PropertyUtils.getProperty("base.url");

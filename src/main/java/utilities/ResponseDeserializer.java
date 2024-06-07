@@ -9,7 +9,7 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ApiResponseDeserializer {
+public class ResponseDeserializer {
     // Generic method to deserialize the response body to a specified type (responseType).
     public static <T> T deserializeResponse(Response response, Class<T> responseType) {
         // ObjectMapper is used to map JSON to Java objects.

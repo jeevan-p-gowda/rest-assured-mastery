@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class UserProfileUpdateWithPATCH {
 
-    @Test
+    @Test(groups={"parallel"})
     public void testUserProfileCreationAndPartialUpdate() {
         // Read base URL from the property file
         RestAssured.baseURI = PropertyUtils.getProperty("base.url");

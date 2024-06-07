@@ -4,7 +4,7 @@ import io.restassured.response.Response;
 import models.auth.SignupRequestModel;
 import models.auth.SignupResponseModel;
 import org.testng.annotations.Test;
-import utilities.ApiResponseDeserializer;
+import utilities.ResponseDeserializer;
 import utilities.EndpointConfig;
 import utilities.PropertyUtils;
 import utilities.RandomEmailGenerator;
@@ -37,7 +37,7 @@ public class ResponseDeserializationTest {
                 .post(signUpEndpoint);
 
         // Deserialize the response to the SignupResponseModel object
-        SignupResponseModel signupResponseModel = ApiResponseDeserializer.deserializeResponse(response, SignupResponseModel.class);
+        SignupResponseModel signupResponseModel = ResponseDeserializer.deserializeResponse(response, SignupResponseModel.class);
 
         // Verifying that the deserialized status code is as expected and existence of other fields
         assertEquals(signupResponseModel.getStatusCode(), 201);
