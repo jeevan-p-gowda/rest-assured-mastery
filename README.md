@@ -13,7 +13,7 @@ Java foundation and beyond
 ### 🛠️Setup
 1. Install [Git Bash](https://git-scm.com/downloads) - for Windows
 2. Install [Java 11](https://www.oracle.com/java/technologies/downloads/#java11) - based on your platform
-3. Install [Maven](https://maven.apache.org/download.cgi) and set the env path - for Windows
+3. Install [Maven](https://maven.apache.org/download.cgi) and set the env path
 4. `git clone` the repo
 5. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows) and open the repo
 6. `mvn clean install` - installs all dependencies
