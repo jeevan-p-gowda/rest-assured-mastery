@@ -1,5 +1,4 @@
 <img align=right src="https://avatars.githubusercontent.com/u/19369327?s=200&v=4" title="REST Assured" width='auto' height="70"/>
-
 ### 🧩Application
 E-Commerce [Swagger](https://www.apicademy.dev/docs/)
 
