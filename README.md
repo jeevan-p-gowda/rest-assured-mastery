@@ -19,3 +19,9 @@ Java foundation and beyond
 6. `mvn clean install` - installs all dependencies
 
 ### ⏯️Execution
+- IDE TestNG runner.
+- CLI
+  - `mvn test` - runs all tests
+  - `mvn test -Dtest=PlaceSuccessfulOrderTest` - runs specific tests
+  - `mvn test -Dgroups=e2e` - runs tagged tests
+> `mvn allure:serve` - opens allure report
