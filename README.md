@@ -18,10 +18,12 @@ Java foundation and beyond
 5. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows) and open the repo
 6. `mvn clean install` - installs all dependencies
 
+   > If using Windows, set IDE terminal to Git Bash and execute.
+
 ### ⏯️Execution
 - IDE TestNG runner.
 - CLI
   - `mvn test` - runs all tests
   - `mvn test -Dtest=PlaceSuccessfulOrderTest` - runs specific tests
   - `mvn test -Dgroups=e2e` - runs tagged tests
-> `mvn allure:serve` - opens allure report
+  - `mvn allure:serve` - opens allure report
